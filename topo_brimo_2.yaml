@@ -1,0 +1,16 @@
+# Panel Config
+
+cellIdPreamble: "cell-"
+gradientMode: "hue"
+
+cells:
+  ocp:
+    dataRef: "test_ocp"
+    label:
+      separator: "replace"
+      units: "ops"
+    labelColor:
+      thresholds:
+        - {color: "red", level: "${__value.time <= 10}"}
+        - {color: "orange", level: "${__value.time <= 50}"}
+        - {color: "green", level: "${__value.time > 50}"}
