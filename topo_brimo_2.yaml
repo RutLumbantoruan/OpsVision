@@ -4,7 +4,7 @@ cellIdPreamble: "cell-"
 gradientMode: "hue"
 
 cells:
-  ocp:
+  ocp-health:
     dataRef: "test_ocp"
     label:
       separator: "replace"
