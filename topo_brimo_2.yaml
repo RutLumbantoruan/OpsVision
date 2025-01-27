@@ -1,16 +1,24 @@
-# Panel Config
-
-cellIdPreamble: "cell-"
-gradientMode: "hue"
+# Thresholds for colors based on values
+thresholds:
+  - color: "red"
+    level: 0
+  - color: "orange"
+    level: 50
+  - color: "green"
+    level: 100
 
 cells:
-  ocp-health:
-    dataRef: "test_ocp"
-    label:
-      separator: "replace"
-      units: "ops"
+  ocp:
     labelColor:
       thresholds:
-        - {color: "red", level: "${__value.time <= 10}"}
-        - {color: "orange", level: "${__value.time <= 50}"}
-        - {color: "green", level: "${__value.time > 50}"}
+        - {color: "red", level: 0}       # Merah untuk nilai rendah
+        - {color: "orange", level: 50}  # Oranye untuk nilai menengah
+        - {color: "green", level: 100}  # Hijau untuk nilai tinggi
+    timeBasedColor:
+      enabled: true  # Mengaktifkan perubahan warna berdasarkan waktu
+      mode: "linear"  # Mode linear antara threshold dan waktu
+      timeField: "__from"  # Menggunakan waktu mulai dari time slider
+      rules:
+        - {time: "0", color: "red"}       # Warna merah pada waktu awal
+        - {time: "50", color: "orange"}  # Warna oranye pada waktu tengah
+        - {time: "100", color: "green"}  # Warna hijau pada waktu akhir
