@@ -1,0 +1,60 @@
+---
+
+#------------------------------------------------------------------------------
+# YAML Aliases to simplify maintenance
+
+anchorLinks:
+  - threshold: &threshold    
+    - {color: "red", level: 0}
+    - {color: "orange", level: 80}
+    - {color: "semi-dark-green", level: 100}
+
+
+#------------------------------------------------------------------------------
+# Highlighting
+
+tagConfig:
+  legend: ["Queue Technology:", "rabbitMQ", "kafka", "|", "Flow Attribs:", "inflow", "depth", "latency", "active", "|"]
+  color: "yellow"
+  highlightRgbFactor: 5.0
+  lowlightAlphaFactor: 0.3
+
+#------------------------------------------------------------------------------
+# Panel Config
+
+cellIdPreamble: "cell-"
+gradientMode: "hue"
+
+cells:
+  #----------------------------------------------------------------------------
+  ocp:
+    dataRef: "test_ocp"
+    label:
+      separator: "replace"
+      units: "ops"
+    labelColor:
+      thresholds: *threshold
+
+  apm:
+    dataRef: "test_apm"
+    label:
+      separator: "replace"
+      units: "ops"
+    labelColor:
+      thresholds: *threshold
+
+  brimo:
+    dataRef: "test_brimo"
+    label:
+      separator: "replace"
+      units: "ops"
+    labelColor:
+      thresholds: *threshold
+
+  isp:
+    dataRef: "test_isp"
+    label:
+      separator: "replace"
+      units: "ops"
+    labelColor:
+      thresholds: *threshold
