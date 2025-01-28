@@ -3,6 +3,8 @@ anchorLinks:
       url: "http://localhost:3000/"
       params: "from=now-1h&to=now"
 
+cellIdPreamble: "cell-"
+
 cells:
   ocp:
     fillColor:
