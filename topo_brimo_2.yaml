@@ -1,7 +1,7 @@
 anchorLinks:
   - link: &grafana-home
       url: "http://localhost:3000/"
-      params: "from=now-1h&to=now"
+      params: "time"
 
 cellIdPreamble: "cell-"
 cells:
