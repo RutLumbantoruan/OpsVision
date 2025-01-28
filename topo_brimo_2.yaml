@@ -1,16 +1,16 @@
 anchorLinks:
   - link: &grafana-home
-      url: "http://localhost:3000/"
+      url: "https://grafana.com/"
       params: "time"
 
 cellIdPreamble: "cell-"
 cells:
   ocp:
+    dataRef: "test-data-large-sin"
     fillColor:
-          gradientMode: "hue"
-          thresholds:
-            - {color: "red", level: 80}
-            - {color: "orange", level: 50}
-            - {color: "green", level: 0}
-        link:
-          url: "http://localhost:3000/d/aeatgeeixd14wd/topologi-brimo?kiosk=&orgId=1&from=now-1h&to=now&timezone=browser"
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
