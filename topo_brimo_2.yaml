@@ -4,7 +4,6 @@ anchorLinks:
       params: "from=now-1h&to=now"
 
 cellIdPreamble: "cell-"
-
 cells:
   ocp:
     fillColor:
