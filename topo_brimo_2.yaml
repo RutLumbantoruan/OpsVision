@@ -130,7 +130,7 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
+        - {color: "green", level: 10}
         - {color: "orange", level: 500}
         - {color: "red", level: 1000}
     link: *grafana-home
@@ -141,7 +141,7 @@ cells:
       gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 500}
+        - {color: "orange", level: 100}
         - {color: "red", level: 1000}
     link: *grafana-home
 
@@ -151,8 +151,8 @@ cells:
       gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "orange", level: 200}
+        - {color: "red", level: 990}
     link: *grafana-home
 
   dns-infoblox:
@@ -171,8 +171,8 @@ cells:
       gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "orange", level: 300}
+        - {color: "red", level: 900}
     link: *grafana-home
 
   isp:
@@ -181,6 +181,6 @@ cells:
       gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 500}
+        - {color: "orange", level: 200}
         - {color: "red", level: 1000}
     link: *grafana-home
