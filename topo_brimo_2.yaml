@@ -14,3 +14,13 @@ cells:
         - {color: "orange", level: 500}
         - {color: "red", level: 1000}
     link: *grafana-home
+
+  f5:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 50}
+        - {color: "red", level: 100}
+    link: *grafana-home
