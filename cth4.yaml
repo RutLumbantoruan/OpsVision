@@ -21,10 +21,10 @@ cells:
       url: "https://github.com/andymchugh/andrewbmchugh-flow-panel/blob/main/src/README.md"
   inbox_depth:
     # dataRef: "test-data-large-sin"
-    # label:
-    #   separator: "cr"
-    #   units: "none"
-    #   decimalPoints: 0
+    label:
+      separator: "cr"
+      units: "none"
+      decimalPoints: 0
     fillColor:
       gradientMode: "hue"
       thresholds:
