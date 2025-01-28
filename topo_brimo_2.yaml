@@ -7,9 +7,10 @@ cellIdPreamble: "cell-"
 cells:
   ocp:
     fillColor:
-        gradientMode: "hue"
-        thresholds:
-          - {color: "semi-dark-green", level: 0}
-          - {color: "orange", level: 400}
-          - {color: "red", level: 800}
-      link: *grafana-home
+          gradientMode: "hue"
+          thresholds:
+            - {color: "red", level: 80}
+            - {color: "orange", level: 50}
+            - {color: "green", level: 0}
+        link:
+          url: "http://localhost:3000/d/aeatgeeixd14wd/topologi-brimo?kiosk=&orgId=1&from=now-1h&to=now&timezone=browser"
