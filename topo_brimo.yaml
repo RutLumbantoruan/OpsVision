@@ -18,10 +18,10 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", severity_ocp: 0}
-        - {color: "green", severity_ocp: 3}
-        - {color: "orange", severity_ocp: 2}
-        - {color: "red", severity_ocp: 1}
+        - {color: "green", level: 0}
+        - {color: "green", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
     # query: |
     #   SELECT MAX(severity) AS max_severity
     #   FROM db_mart.data_k8s_prometheus_dc
