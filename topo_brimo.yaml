@@ -1,60 +1,26 @@
----
-
-#------------------------------------------------------------------------------
-# YAML Aliases to simplify maintenance
-
 anchorLinks:
-  - threshold: &threshold    
-    - {color: "red", level: 0}
-    - {color: "orange", level: 80}
-    - {color: "semi-dark-green", level: 100}
-
-
-#------------------------------------------------------------------------------
-# Highlighting
-
-tagConfig:
-  legend: ["Queue Technology:", "rabbitMQ", "kafka", "|", "Flow Attribs:", "inflow", "depth", "latency", "active", "|"]
-  color: "yellow"
-  highlightRgbFactor: 5.0
-  lowlightAlphaFactor: 0.3
-
-#------------------------------------------------------------------------------
-# Panel Config
+  - link: &grafana-home
+      url: "https://grafana.com/"
+      params: "time"
 
 cellIdPreamble: "cell-"
-gradientMode: "hue"
-
 cells:
-  #----------------------------------------------------------------------------
   ocp:
-    dataRef: "test_ocp"
-    label:
-      separator: "replace"
-      units: "ops"
-    labelColor:
-      thresholds: *threshold
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
 
-  apm:
-    dataRef: "test_apm"
-    label:
-      separator: "replace"
-      units: "ops"
-    labelColor:
-      thresholds: *threshold
-
-  brimo:
-    dataRef: "test_brimo"
-    label:
-      separator: "replace"
-      units: "ops"
-    labelColor:
-      thresholds: *threshold
-
-  isp:
-    dataRef: "test_isp"
-    label:
-      separator: "replace"
-      units: "ops"
-    labelColor:
-      thresholds: *threshold
+  f5:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 50}
+        - {color: "red", level: 100}
+    link: *grafana-home
