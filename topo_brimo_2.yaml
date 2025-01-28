@@ -95,7 +95,7 @@ cells:
         - {color: "red", level: 1000}
     link: *grafana-home
 
-  datastore:
+  storage:
     dataRef: "test-data-large-sin"
     fillColor:
       gradientMode: "hue"
