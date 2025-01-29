@@ -16,7 +16,7 @@ cells:
 
     dataRef: "data-ocp"
     fillColor:
-      # gradientMode: "hue"
+      gradientMode: "none"
       thresholds:
         - {color: "green", level: 0}
         - {color: "green", level: 3}
