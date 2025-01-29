@@ -1,0 +1,208 @@
+anchorLinks:
+  - link: &grafana-home
+      url: "https://grafana.com/"
+      params: "time"
+
+cellIdPreamble: "cell-"
+cells:
+  ocp:
+    # dataRef: "test-data-large-sin"
+    # fillColor:
+    #   gradientMode: "hue"
+    #   thresholds:
+    #     - {color: "green", level: 0}
+    #     - {color: "orange", level: 500}
+    #     - {color: "red", level: 1000}
+
+    dataRef: "data-ocp"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "green", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+    # query: |
+    #   SELECT MAX(severity) AS max_severity
+    #   FROM db_mart.data_k8s_prometheus_dc
+    #   WHERE timestamp_s > $__from/1000 AND timestamp_s < $__to/1000; |
+    link: *grafana-home
+
+
+  f5:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 50}
+        - {color: "red", level: 100}
+
+    fillLevel:
+      dataRef: "test-data-large-sin"
+      thresholdOffValue: 0
+      thresholdLwrValue: 0
+      thresholdLwrFillPercent: 0
+      thresholdUprValue: 100
+      thresholdUprFillPercent: 100
+    link: *grafana-home
+
+  apm:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "green", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+    link: *grafana-home
+
+  brimo:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  database:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  redis:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  firewall:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  sslo:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  waf:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  storage:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  host:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  vm:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  ivat:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 10}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  dwdm:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 100}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  domain:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 200}
+        - {color: "red", level: 990}
+    link: *grafana-home
+
+  dns-infoblox:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 500}
+        - {color: "red", level: 1000}
+    link: *grafana-home
+
+  perangkat-internal:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 300}
+        - {color: "red", level: 900}
+    link: *grafana-home
+
+  isp:
+    dataRef: "test-data-large-sin"
+    fillColor:
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "orange", level: 200}
+        - {color: "red", level: 1000}
+    link: *grafana-home
