@@ -1,7 +1,7 @@
 anchorLinks:
   - link: &grafana-home
       url: "https://grafana.com/"
-      params: "time"
+      # params: "time"
 
 cellIdPreamble: "cell-"
 cells:
@@ -38,13 +38,13 @@ cells:
         - {color: "orange", level: 50}
         - {color: "red", level: 100}
 
-    fillLevel:
-      dataRef: "test-data-large-sin"
-      thresholdOffValue: 0
-      thresholdLwrValue: 0
-      thresholdLwrFillPercent: 0
-      thresholdUprValue: 100
-      thresholdUprFillPercent: 100
+    # fillLevel:
+    #   dataRef: "test-data-large-sin"
+    #   thresholdOffValue: 0
+    #   thresholdLwrValue: 0
+    #   thresholdLwrFillPercent: 0
+    #   thresholdUprValue: 100
+    #   thresholdUprFillPercent: 100
     link: *grafana-home
 
   apm:
