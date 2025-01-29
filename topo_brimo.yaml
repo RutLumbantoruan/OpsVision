@@ -16,7 +16,7 @@ cells:
 
     dataRef: "data-ocp"
     fillColor:
-      gradientMode: "none"
+      gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
         - {color: "green", level: 3}
@@ -34,9 +34,20 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 50}
-        - {color: "red", level: 100}
+        - {color: "green", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+    fillLevel:
+      dataRef: "test-data-large-sin"
+      bespokeDataRef: null
+      datapoint: "last"
+      thresholdOffValue: 3
+      thresholdLwrValue: 2
+      thresholdLwrFillPercent: 3
+      thresholdUprValue: 1
+      thresholdUprFillPercent: 1
+      fillDirection: 'bottomToTop'
     link: *grafana-home
 
   apm:
