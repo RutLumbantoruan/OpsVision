@@ -39,7 +39,7 @@ cells:
         - {color: "red", level: 100}
 
     fillLevel:
-      dataRef: "test-data-large-cos"
+      dataRef: "test-data-large-sin"
       bespokeDataRef: null
       datapoint: "last"
       thresholdOffValue: 0
