@@ -41,13 +41,13 @@ cells:
     link: *grafana-home
 
   f5:
-    dataRef: "test-data-large-sin"
+    dataRef: "severity_f5"
     fillColor:
-      gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 50}
-        - {color: "red", level: 100}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
 
     # fillLevel:
     #   dataRef: "test-data-large-sin"
@@ -69,63 +69,63 @@ cells:
     link: *grafana-home
 
   brimo:
-    dataRef: "test-data-large-sin"
+    dataRef: "severity_brimo"
     fillColor:
-      gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
     link: *grafana-home
 
   database:
-    dataRef: "test-data-large-sin"
+    dataRef: "severity_database"
     fillColor:
-      gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
     link: *grafana-home
 
   redis:
-    dataRef: "test-data-large-sin"
+    dataRef: "severity_redis"
     fillColor:
-      gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
     link: *grafana-home
 
   firewall:
-    dataRef: "test-data-large-sin"
+    dataRef: "severity_firewall"
     fillColor:
-      gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
     link: *grafana-home
 
   sslo:
-    dataRef: "test-data-large-sin"
+    dataRef: "severity_sslo"
     fillColor:
-      gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
     link: *grafana-home
 
   waf:
-    dataRef: "test-data-large-sin"
+    dataRef: "severity_waf"
     fillColor:
-      gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
     link: *grafana-home
 
   storage:
