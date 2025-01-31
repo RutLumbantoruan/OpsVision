@@ -16,10 +16,9 @@ cells:
 
     dataRef: "severity_ocp"
     fillColor:
-      gradientMode: "hue"
       thresholds:
         - {color: "green", level: 0}
-        - {color: "green", level: 3}
+        - {color: "yellow", level: 3}
         - {color: "orange", level: 2}
         - {color: "red", level: 1}
 
@@ -60,11 +59,11 @@ cells:
     link: *grafana-home
 
   apm:
-    dataRef: "test-data-large-sin"
+    dataRef: "severity_apm"
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "green", level: 3}
+        - {color: "yellow", level: 3}
         - {color: "orange", level: 2}
         - {color: "red", level: 1}
     link: *grafana-home
