@@ -14,10 +14,10 @@ cells:
         # - {color: "yellow", {{.Values.severity_ocp}}: 3}
         # - {color: "orange", {{.Values.severity_ocp}}: 2}
         # - {color: "red", {{.Values.severity_ocp}}: 1}
-        - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
-        - {color: "red", level: 1}
+        - {color: "green", values: 0}
+        - {color: "yellow", values: 3}
+        - {color: "orange", values: 2}
+        - {color: "red", values: 1}
 
   
   ocp-health:
