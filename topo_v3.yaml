@@ -14,10 +14,10 @@ cells:
         # - {color: "yellow", {{.Values.severity_ocp}}: 3}
         # - {color: "orange", {{.Values.severity_ocp}}: 2}
         # - {color: "red", {{.Values.severity_ocp}}: 1}
-        - {color: "green", values: 0}
-        - {color: "red", values: 1}
-        - {color: "orange", values: 2}
-        - {color: "yellow", values: 3}
+        - {color: "green", values: 0, order: null}
+        - {color: "red", values: 1, order: null}
+        - {color: "orange", values: 2, order: null}
+        - {color: "yellow", values: 3, order: null}
         
 
   
