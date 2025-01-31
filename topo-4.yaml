@@ -1,7 +1,7 @@
 anchorLinks:
   - link: &grafana-home
       url: "https://grafana.com/"
-      # params: "time"
+      params: "time"
 
 cellIdPreamble: "cell-"
 cells:
@@ -16,7 +16,10 @@ cells:
   
   ocp-health:
     dataRef: "ocp-health"
-    content: "{{ocp-health}}%"
+    label:
+      separator: "colon"
+      units: "%"
+      decimalPoints: 0
 
   f5:
     dataRef: "severity_f5"
