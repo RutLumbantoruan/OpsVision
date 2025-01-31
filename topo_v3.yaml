@@ -9,10 +9,10 @@ cells:
     dataRef: "severity_ocp"
     fillColor:
       thresholds:
-        - {color: "green", {{severity_ocp}}: 0}
-        - {color: "yellow", {{severity_ocp}}: 3}
-        - {color: "orange", {{severity_ocp}}: 2}
-        - {color: "red", {{severity_ocp}}: 1}
+        - {color: "green", severity_ocp: 0}
+        - {color: "yellow", severity_ocp: 3}
+        - {color: "orange", severity_ocp: 2}
+        - {color: "red", severity_ocp: 1}
   
   ocp-health:
     dataRef: "ocp_health"
