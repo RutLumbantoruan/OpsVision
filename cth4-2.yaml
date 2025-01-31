@@ -59,10 +59,10 @@ cells:
     link: *grafana-home
   active_workers:
     dataRef: "test-data-small-cos"
-    label:
-      separator: "cr"
-      units: "none"
-      decimalPoints: 0
+    # label:
+    #   separator: "cr"
+    #   units: "none"
+    #   decimalPoints: 0
     labelColor:
       gradientMode: "hue"
       thresholds:
