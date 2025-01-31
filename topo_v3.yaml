@@ -3,16 +3,22 @@ anchorLinks:
       url: "https://grafana.com/"
       params: "time"
 
+
 cellIdPreamble: "cell-"
 cells:
   ocp:
     dataRef: "severity_ocp"
     fillColor:
       thresholds:
-        - {color: "green", {{.Values.severity_ocp}}: 0}
-        - {color: "yellow", {{.Values.severity_ocp}}: 3}
-        - {color: "orange", {{.Values.severity_ocp}}: 2}
-        - {color: "red", {{.Values.severity_ocp}}: 1}
+        # - {color: "green", {{.Values.severity_ocp}}: 0}
+        # - {color: "yellow", {{.Values.severity_ocp}}: 3}
+        # - {color: "orange", {{.Values.severity_ocp}}: 2}
+        # - {color: "red", {{.Values.severity_ocp}}: 1}
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
   
   ocp-health:
     dataRef: "ocp_health"
