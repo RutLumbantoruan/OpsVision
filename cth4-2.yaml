@@ -58,7 +58,7 @@ cells:
         - {color: "orange", level: 100}
     link: *grafana-home
   active_workers:
-    dataRef: "test-data-small-cos"
+    dataRef: "ocp_health"
     label:
       separator: "cr"
       units: "none"
