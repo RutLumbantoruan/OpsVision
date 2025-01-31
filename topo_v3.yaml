@@ -15,9 +15,10 @@ cells:
         # - {color: "orange", {{.Values.severity_ocp}}: 2}
         # - {color: "red", {{.Values.severity_ocp}}: 1}
         - {color: "green", values: 0}
-        - {color: "yellow", values: 3}
-        - {color: "orange", values: 2}
         - {color: "red", values: 1}
+        - {color: "orange", values: 2}
+        - {color: "yellow", values: 3}
+        
 
   
   ocp-health:
