@@ -18,7 +18,8 @@ cells:
     dataRef: "ocp_health"
     label:
       separator: "cr"
-      units: "none"
+      # units: "none"
+      unitsPostfix: "%"
       decimalPoints: 0
 
   f5:
