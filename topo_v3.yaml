@@ -55,10 +55,10 @@ cells:
     dataRef: "severity_apm"
     fillColor:
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
-        - {color: "red", level: 1}
+        - {color: "green", level: 0, order: 1}
+        - {color: "yellow", level: 3, order: 2}
+        - {color: "orange", level: 2, order: 3}
+        - {color: "red", level: 1, order: 0}
     link: *grafana-home
 
   brimo:
