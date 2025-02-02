@@ -55,10 +55,10 @@ cells:
     dataRef: "static_value"
     fillColor:
       thresholds:
-        - {color: "green", level: 0, order: 1}
+        - {color: "green", level: 1, order: 1}
         - {color: "yellow", level: 3, order: 2}
         - {color: "orange", level: 2, order: 3}
-        - {color: "red", level: 1, order: 0}
+        - {color: "red", level: 0, order: 0}
     link: *grafana-home
 
   brimo:
