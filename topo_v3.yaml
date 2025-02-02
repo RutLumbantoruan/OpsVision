@@ -19,9 +19,9 @@ cells:
         # - {color: "orange", data['severity_ocp']: 2, order: null}
         # - {color: "yellow", data['severity_ocp']: 3, order: null}
         - {color: "green", level: 1, order: null}
-        - {color: "yellow", level: 0, order: null}
-        - {color: "orange", level: 2, order: null}
-        - {color: "red", level: 3, order: null}
+        - {color: "yellow", level: 3, order: null}
+        - {color: "orange", level: 0, order: null}
+        - {color: "red", level: 2, order: null}
         
 
   
