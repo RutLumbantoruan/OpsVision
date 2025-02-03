@@ -1,0 +1,297 @@
+anchorLinks:
+  - link: &grafana-home
+      url: "https://grafana.com/"
+      params: "time"
+
+
+cellIdPreamble: "cell-"
+cells:
+  ocp:
+    dataRef: "severity_ocp"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1} 
+  
+  ocp-health:
+    dataRef: "ocp_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  f5:
+    dataRef: "severity_f5"
+    fillColor:
+      thresholds:
+        - {color: "green"}
+        - {color: "yellow"}
+        - {color: "orange"}
+        - {color: "red"}
+
+  f5-health:
+    dataRef: "f5_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  apm:
+    dataRef: "severity_apm"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 1}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 0}
+
+  apm-health:
+    dataRef: "apm_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  brimo:
+    dataRef: "severity_brimo"
+    fillColor:
+      thresholds:
+        - {color: "green"}
+        - {color: "yellow"}
+        - {color: "orange"}
+        - {color: "red"}
+
+  brimo-health:
+    dataRef: "brimo_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  database:
+    dataRef: "severity_database"
+    fillColor:
+      thresholds:
+        - {color: "red", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "green", level: 1}
+
+  db-health:
+    dataRef: "db_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  redis:
+    dataRef: "severity_redis"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  redis-health:
+    dataRef: "redis_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  firewall:
+    dataRef: "severity_firewall"
+    fillColor:
+      thresholds:
+        - {color: "orange", level: 2, order: 2}
+        - {color: "yellow", level: 3, order: 1}
+        - {color: "orange", level: 0, order: 0}
+        - {color: "red", level: 1, order: 3}
+
+  firewall-health:
+    dataRef: "firewall_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  sslo:
+    dataRef: "severity_sslo"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  sslo-health:
+    dataRef: "sslo_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  waf:
+    dataRef: "severity_waf"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  waf-health:
+    dataRef: "waf_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  storage:
+    dataRef: "severity_storage"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  storage-health:
+    dataRef: "storage_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  host:
+    dataRef: "severity_host"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  host-health:
+    dataRef: "host_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  vm:
+    dataRef: "severity_vm"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  vm-health:
+    dataRef: "vm_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  ivat:
+    dataRef: "severity_ivat"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  ivat-health:
+    dataRef: "ivat_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  dwdm:
+    dataRef: "severity_dwdm"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  dwdm-health:
+    dataRef: "dwdm_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  domain:
+    dataRef: "severity_domain"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  domain-health:
+    dataRef: "domain_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+
+  dns-infoblox:
+    dataRef: "severity_dns"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  dns-health:
+    dataRef: "dns_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+
+  perangkat-internal:
+    dataRef: "severity_internal"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  internal-health:
+    dataRef: "internal_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
+
+  isp:
+    dataRef: "severity_isp"
+    fillColor:
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
+
+  isp-health:
+    dataRef: "isp_health"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
