@@ -18,10 +18,10 @@ cells:
       #   # - {color: "orange", data['severity_ocp']: 2, order: null}
       #   # - {color: "yellow", data['severity_ocp']: 3, order: null}
       thresholds:
-        - {color: "green", values: 0}
-        - {color: "yellow", values: 3}
-        - {color: "orange", values: 2}
-        - {color: "red", values: 1}
+        - {color: "green", values: [0]}
+        - {color: "yellow", values: [3]}
+        - {color: "orange", values: [2]}
+        - {color: "red", values: [1]}
 
     # fillColorCompound: true    
   
@@ -37,10 +37,10 @@ cells:
     dataRef: "severity_f5"
     fillColor:
       thresholds:
-        - {color: "green", level: 10}
-        - {color: "yellow", level: 50}
-        - {color: "orange", level: 100}
-        - {color: "red", level: 1000}
+        - {color: "green"}
+        - {color: "yellow"}
+        - {color: "orange"}
+        - {color: "red"}
 
     # fillLevel:
     #   dataRef: "test-data-large-sin"
