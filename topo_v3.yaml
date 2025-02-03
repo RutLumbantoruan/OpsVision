@@ -12,10 +12,10 @@ cells:
     datapoint: "last"
     fillColor:
       thresholds:
-        - {color: "green", data['severity_ocp'].value.values[0]: 0}
-        - {color: "yellow", value.values: 3}
-        - {color: "orange", value.values: 2}
-        - {color: "red", value.values: 1}
+        - {color: "green", level: 0}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
+        - {color: "red", level: 1}
 
     # fillColorCompound: true    
   
