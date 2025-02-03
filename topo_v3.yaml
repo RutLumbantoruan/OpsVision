@@ -9,19 +9,22 @@ cells:
   ocp:
     dataRef: "severity_ocp"
     fillColor:
-      thresholds:
-        # - {color: "green", {{.Values.severity_ocp}}: 0}
-        # - {color: "yellow", {{.Values.severity_ocp}}: 3}
-        # - {color: "orange", {{.Values.severity_ocp}}: 2}
-        # - {color: "red", {{.Values.severity_ocp}}: 1}
-        # - {color: "green", data['severity_ocp']: 0, order: null}
-        # - {color: "red", data['severity_ocp']: 1, order: null}
-        # - {color: "orange", data['severity_ocp']: 2, order: null}
-        # - {color: "yellow", data['severity_ocp']: 3, order: null}
-        - {color: "green", level: 1, order: null}
-        - {color: "yellow", level: 2, order: null}
-        - {color: "orange", level: 0, order: null}
-        - {color: "red", level: 3, order: null}
+      "{{ data['severity_ocp'] == 0 ? 'green' : 
+      (data['severity_ocp'] == 1 ? 'yellow' : 
+      (data['severity_ocp'] == 2 'orange' : 'red')) }}"
+      # thresholds:
+      #   # - {color: "green", {{.Values.severity_ocp}}: 0}
+      #   # - {color: "yellow", {{.Values.severity_ocp}}: 3}
+      #   # - {color: "orange", {{.Values.severity_ocp}}: 2}
+      #   # - {color: "red", {{.Values.severity_ocp}}: 1}
+      #   # - {color: "green", data['severity_ocp']: 0, order: null}
+      #   # - {color: "red", data['severity_ocp']: 1, order: null}
+      #   # - {color: "orange", data['severity_ocp']: 2, order: null}
+      #   # - {color: "yellow", data['severity_ocp']: 3, order: null}
+      #   - {color: "green", level: 1, order: null}
+      #   - {color: "yellow", level: 2, order: null}
+      #   - {color: "orange", level: 0, order: null}
+      #   - {color: "red", level: 3, order: null}
 
     # fillColorCompound: true    
   
@@ -38,7 +41,7 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 10}
-        - {color: "yellow", level: 500}
+        - {color: "yellow", level: 50}
         - {color: "orange", level: 100}
         - {color: "red", level: 1000}
 
@@ -55,11 +58,10 @@ cells:
     dataRef: "severity_apm"
     fillColor:
       thresholds:
-        # - {color: "green", level: 1, order: 1}
-        # - {color: "yellow", level: 3, order: 2}
-        # - {color: "orange", level: 2, order: 3}
+        - {color: "green", level: 1}
+        - {color: "yellow", level: 3}
+        - {color: "orange", level: 2}
         - {color: "red", level: 0}
-    link: *grafana-home
 
   brimo:
     dataRef: "severity_brimo"
@@ -97,7 +99,7 @@ cells:
       thresholds:
         - {color: "orange", level: 2, order: 2}
         - {color: "yellow", level: 3, order: 1}
-        - {color: "amber", level: 0, order: 0}
+        - {color: "orange", level: 0, order: 0}
         - {color: "red", level: 1, order: 3}
     link: *grafana-home
 
