@@ -11,9 +11,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
+        - {color: "red", level: 1}
         - {color: "orange", level: 2}
-        - {color: "red", level: 1} 
+        - {color: "yellow", level: 3}
   
   ocp-health:
     dataRef: "ocp_health"
@@ -26,10 +26,10 @@ cells:
     dataRef: "severity_f5"
     fillColor:
       thresholds:
-        - {color: "green"}
-        - {color: "yellow"}
-        - {color: "orange"}
-        - {color: "red"}
+        - {color: "green", level: 0}
+        - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   f5-health:
     dataRef: "f5_health"
@@ -42,10 +42,10 @@ cells:
     dataRef: "severity_apm"
     fillColor:
       thresholds:
-        - {color: "green", level: 1}
-        - {color: "yellow", level: 3}
+        - {color: "green", level: 0}
+        - {color: "red", level: 1}
         - {color: "orange", level: 2}
-        - {color: "red", level: 0}
+        - {color: "yellow", level: 3}
 
   apm-health:
     dataRef: "apm_health"
@@ -58,10 +58,10 @@ cells:
     dataRef: "severity_brimo"
     fillColor:
       thresholds:
-        - {color: "green"}
-        - {color: "yellow"}
-        - {color: "orange"}
-        - {color: "red"}
+        - {color: "green", level: 0}
+        - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   brimo-health:
     dataRef: "brimo_health"
@@ -74,10 +74,10 @@ cells:
     dataRef: "severity_database"
     fillColor:
       thresholds:
-        - {color: "red", level: 0}
-        - {color: "yellow", level: 3}
+        - {color: "green", level: 0}
+        - {color: "red", level: 1}
         - {color: "orange", level: 2}
-        - {color: "green", level: 1}
+        - {color: "yellow", level: 3}
 
   db-health:
     dataRef: "db_health"
@@ -91,9 +91,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   redis-health:
     dataRef: "redis_health"
@@ -106,10 +106,10 @@ cells:
     dataRef: "severity_firewall"
     fillColor:
       thresholds:
-        - {color: "orange", level: 2, order: 2}
-        - {color: "yellow", level: 3, order: 1}
-        - {color: "orange", level: 0, order: 0}
-        - {color: "red", level: 1, order: 3}
+        - {color: "green", level: 0}
+        - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   firewall-health:
     dataRef: "firewall_health"
@@ -123,9 +123,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   sslo-health:
     dataRef: "sslo_health"
@@ -139,9 +139,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   waf-health:
     dataRef: "waf_health"
@@ -155,9 +155,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   storage-health:
     dataRef: "storage_health"
@@ -171,9 +171,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   host-health:
     dataRef: "host_health"
@@ -187,9 +187,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   vm-health:
     dataRef: "vm_health"
@@ -203,9 +203,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   ivat-health:
     dataRef: "ivat_health"
@@ -219,9 +219,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   dwdm-health:
     dataRef: "dwdm_health"
@@ -235,9 +235,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   domain-health:
     dataRef: "domain_health"
@@ -252,9 +252,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   dns-health:
     dataRef: "dns_health"
@@ -269,9 +269,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   internal-health:
     dataRef: "internal_health"
@@ -285,9 +285,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
 
   isp-health:
     dataRef: "isp_health"
