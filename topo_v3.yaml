@@ -75,10 +75,10 @@ cells:
     dataRef: "severity_database"
     fillColor:
       thresholds:
-        - {color: "green", level: 0}
+        - {color: "red", level: 0}
         - {color: "yellow", level: 3}
         - {color: "orange", level: 2}
-        - {color: "red", level: 1}
+        - {color: "green", level: 1}
     link: *grafana-home
 
   redis:
