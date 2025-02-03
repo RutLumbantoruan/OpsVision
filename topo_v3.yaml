@@ -52,7 +52,7 @@ cells:
     link: *grafana-home
 
   apm:
-    dataRef: "static_value"
+    dataRef: "severity_apm"
     fillColor:
       thresholds:
         # - {color: "green", level: 1, order: 1}
