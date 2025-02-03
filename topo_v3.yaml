@@ -23,7 +23,7 @@ cells:
         - {color: "orange", level: 0, order: null}
         - {color: "red", level: 3, order: null}
 
-    fillColorCompound: true    
+    # fillColorCompound: true    
   
   ocp-health:
     dataRef: "ocp_health"
