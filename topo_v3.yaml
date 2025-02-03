@@ -65,10 +65,10 @@ cells:
     dataRef: "severity_brimo"
     fillColor:
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
-        - {color: "red", level: 1}
+        # - {color: "green", level: 0}
+        - {color: "yellow"}
+        # - {color: "orange", level: 2}
+        # - {color: "red", level: 1}
     link: *grafana-home
 
   database:
