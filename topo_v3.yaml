@@ -8,11 +8,14 @@ cellIdPreamble: "cell-"
 cells:
   ocp:
     dataRef: "severity_ocp"
-    fillColor:
-      "{{ data['severity_ocp'] == 0 ? 'green' : 
-      (data['severity_ocp'] == 1 ? 'yellow' : 
-      (data['severity_ocp'] == 2 'orange' : 'red')) }}"
-      # thresholds:
+    bespoke:
+      elements:
+      - elementName: "ocp"  # Elemen SVG yang ingin diwarnai
+        attribsSet:
+          fillColor: "{{ data['severity_ocp'] == 0 ? 'green' : 
+                        (data['severity_ocp'] == 3 ? 'yellow' : 
+                          (data['severity_ocp'] == 2 ? 'orange' : 'red')) }}"
+    # fillColor:
       #   # - {color: "green", {{.Values.severity_ocp}}: 0}
       #   # - {color: "yellow", {{.Values.severity_ocp}}: 3}
       #   # - {color: "orange", {{.Values.severity_ocp}}: 2}
