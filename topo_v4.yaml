@@ -303,3 +303,18 @@ cells:
       separator: "cr"
       unitsPostfix: "%"
       decimalPoints: null
+
+  apps:
+    dataRef: "ocp_health"
+    bespoke:
+      dataRefs:
+        - "brimo_health"
+        - "apm_health"
+        - "db_health"
+        - "redis_health"
+      formulas:
+        - "appsHealth = (data['ocp_health'] + data['brimo_health'] + data['apm_health'] + data['db_health'] + data['redis_health']) / 5"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: 2
