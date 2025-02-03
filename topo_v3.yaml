@@ -119,9 +119,9 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "green"}
+        - {color: "orange"}
+        - {color: "red"}
     link: *grafana-home
 
   host:
@@ -129,9 +129,9 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "green"}
+        - {color: "orange"}
+        - {color: "red"}
     link: *grafana-home
 
   vm:
@@ -139,9 +139,9 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "green"}
+        - {color: "orange"}
+        - {color: "red"}
     link: *grafana-home
 
   ivat:
@@ -149,9 +149,9 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 10}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "green"}
+        - {color: "orange"}
+        - {color: "red"}
     link: *grafana-home
 
   dwdm:
@@ -159,9 +159,9 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 100}
-        - {color: "red", level: 1000}
+        - {color: "green"}
+        - {color: "orange"}
+        - {color: "red"}
     link: *grafana-home
 
   domain:
@@ -169,9 +169,9 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 200}
-        - {color: "red", level: 990}
+        - {color: "green"}
+        - {color: "orange" }
+        - {color: "red"}
     link: *grafana-home
 
   dns-infoblox:
@@ -179,9 +179,9 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 500}
-        - {color: "red", level: 1000}
+        - {color: "green"}
+        - {color: "orange"}
+        - {color: "red"}
     link: *grafana-home
 
   perangkat-internal:
@@ -189,9 +189,9 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 300}
-        - {color: "red", level: 900}
+        - {color: "green"}
+        - {color: "orange"}
+        - {color: "red"}
     link: *grafana-home
 
   isp:
@@ -199,7 +199,7 @@ cells:
     fillColor:
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "orange", level: 200}
-        - {color: "red", level: 1000}
+        - {color: "green"}
+        - {color: "orange"}
+        - {color: "red"}
     link: *grafana-home
