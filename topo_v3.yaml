@@ -37,8 +37,8 @@ cells:
     dataRef: "severity_f5"
     fillColor:
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "yellow", level: 10}
+        - {color: "green", level: 10}
+        - {color: "yellow", level: 11}
         - {color: "orange", level: 100}
         - {color: "red", level: 1000}
 
@@ -95,7 +95,7 @@ cells:
     dataRef: "severity_firewall"
     fillColor:
       thresholds:
-        - {color: "green", level: 2, order: 2}
+        - {color: "orange", level: 2, order: 2}
         - {color: "yellow", level: 3, order: 1}
         - {color: "orange", level: 0, order: 0}
         - {color: "red", level: 1, order: 3}
