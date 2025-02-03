@@ -8,14 +8,7 @@ cellIdPreamble: "cell-"
 cells:
   ocp:
     dataRef: "severity_ocp"
-    bespoke:
-      elements:
-      - elementName: "ocp"  # Elemen SVG yang ingin diwarnai
-        attribsSet:
-          fillColor: "{{ data['severity_ocp'] == 0 ? 'green' : 
-                        (data['severity_ocp'] == 3 ? 'yellow' : 
-                          (data['severity_ocp'] == 2 ? 'orange' : 'red')) }}"
-    # fillColor:
+    fillColor:
       #   # - {color: "green", {{.Values.severity_ocp}}: 0}
       #   # - {color: "yellow", {{.Values.severity_ocp}}: 3}
       #   # - {color: "orange", {{.Values.severity_ocp}}: 2}
@@ -24,10 +17,10 @@ cells:
       #   # - {color: "red", data['severity_ocp']: 1, order: null}
       #   # - {color: "orange", data['severity_ocp']: 2, order: null}
       #   # - {color: "yellow", data['severity_ocp']: 3, order: null}
-      #   - {color: "green", level: 1, order: null}
-      #   - {color: "yellow", level: 2, order: null}
-      #   - {color: "orange", level: 0, order: null}
-      #   - {color: "red", level: 3, order: null}
+      - {color: "green", level: 0}
+      - {color: "yellow", level: 3}
+      - {color: "orange", level: 2}
+      - {color: "red", level: 1}
 
     # fillColorCompound: true    
   
