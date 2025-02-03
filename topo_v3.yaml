@@ -38,9 +38,9 @@ cells:
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
-        - {color: "red", level: 1}
+        - {color: "yellow", level: 10}
+        - {color: "orange", level: 100}
+        - {color: "red", level: 1000}
 
     # fillLevel:
     #   dataRef: "test-data-large-sin"
