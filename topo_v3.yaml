@@ -18,10 +18,10 @@ cells:
       #   # - {color: "orange", data['severity_ocp']: 2, order: null}
       #   # - {color: "yellow", data['severity_ocp']: 3, order: null}
       thresholds:
-        - {color: "green", values: [0]}
-        - {color: "yellow", values: [3]}
-        - {color: "orange", values: [2]}
-        - {color: "red", values: [1]}
+        - {color: "green", value.values: 0}
+        - {color: "yellow", value.values: 3}
+        - {color: "orange", value.values: 2}
+        - {color: "red", value.values: 1}
 
     # fillColorCompound: true    
   
