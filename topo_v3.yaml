@@ -8,14 +8,15 @@ cellIdPreamble: "cell-"
 cells:
   ocp:
     dataRef: "severity_ocp"
-    gradientMode: "hue"
+    gradientMode: "none"
     datapoint: "last"
     fillColor:
       thresholds:
         - {color: "green", level: 0}
-        - {color: "yellow", level: 3}
-        - {color: "orange", level: 2}
         - {color: "red", level: 1}
+        - {color: "orange", level: 2}
+        - {color: "yellow", level: 3}
+
 
     # fillColorCompound: true    
   
@@ -23,7 +24,6 @@ cells:
     dataRef: "ocp_health"
     label:
       separator: "cr"
-      # units: "%"
       unitsPostfix: "%"
       decimalPoints: null
 
