@@ -17,11 +17,14 @@ cells:
       #   # - {color: "red", data['severity_ocp']: 1, order: null}
       #   # - {color: "orange", data['severity_ocp']: 2, order: null}
       #   # - {color: "yellow", data['severity_ocp']: 3, order: null}
-      thresholds:
-        - {color: "green", value.values: 0}
-        - {color: "yellow", value.values: 3}
-        - {color: "orange", value.values: 2}
-        - {color: "red", value.values: 1}
+      attribsSet:
+         text: "{{ data['severity_ocp'].datapoint }}"
+
+      # thresholds:
+      #   - {color: "green", value.values: 0}
+      #   - {color: "yellow", value.values: 3}
+      #   - {color: "orange", value.values: 2}
+      #   - {color: "red", value.values: 1}
 
     # fillColorCompound: true    
   
