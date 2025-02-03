@@ -312,10 +312,11 @@ cells:
         - "apm_health"
         - "db_health"
         - "redis_health"
+      constants:
+        appsHealthDRef: "appsHealth"  # Simpan hasil formula dalam constants
       formulas:
         - "appsHealth = (data['ocp_health'] + data['brimo_health'] + data['apm_health'] + data['db_health'] + data['redis_health']) / 5"
-    
-    dataRef: "appsHealth"
+    dataRef: "appsHealthDRef"  # Ambil nilai dari constants
     label:
       separator: "cr"
       unitsPostfix: "%"
