@@ -295,3 +295,11 @@ cells:
       separator: "cr"
       unitsPostfix: "%"
       decimalPoints: null
+
+
+  apps:
+    dataRef: "(brimo_health + apm_health + ocp_health + db_health + redis_health)/5"
+    label:
+      separator: "cr"
+      unitsPostfix: "%"
+      decimalPoints: null
